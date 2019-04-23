@@ -3,44 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>DEVICE магазин гаджетов</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
     <div class="site-wraper">
-        <header class="page-header">
-          <h1>DEVICE</h1>
-          <nav class="page-navi">
-            <div class="navi-search">
-              Поиск по сайту
-            </div>
-            <a href="catalog-group.html" class="navi-catalog-button">
-              Каталог товаров
-            </a>
-            <div class="catalog-menu">
-            <ul class="catalog-menu-group catalog-group-1">
-              <li><a href="vr.html">Виртуальная реальность</a></li>
-              <li><a href="monopod.html">Моноподы для селфи</a></li>
-              <li><a href="action.html">Экшн-камеры</a></li>
-            </ul>
-            <ul class="catalog-menu-group catalog-group-2">
-              <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
-              <li><a href="smartwatch.html">Умные часы</a></li>
-            </ul>
-            <ul class="catalog-menu-group catalog-group-3">
-              <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
-            </ul>
+      <header class="page-header">
+        <h1><a href="#">DEVICE</a></h1>
+        <nav class="page-navi">
+          <div class="search-user-wraper">
+            <form class="search-form" action="" method="get">
+              <label for="search" aria-label="Поиск по сайту"></label>
+              <input type="search" name="site-search" id="search" placeholder="Поиск по сайту">
+              <button type="submit" name="search-submit"><span>Найти</span></button>
+            </form>
             <ul class="user-navi">
               <li class="user-navi-item login"><a href="#" class="header-login-link login-link">Войти</a></li>
               <li class="user-navi-item compare"><a href="#" class="header-compare-link compare-link">Сравнить</a></li>
               <li class="user-navi-item cart"><a href="#" class="header-cart-link cart-link">Корзина</a></li>
             </ul>
           </div>
+          <div class="catalog-shortcuts-wraper">
+            <a href="catalog.html" class="navi-catalog-button">
+              Каталог товаров
+            </a>
+            <div class="plus">
+            </div>
+            <div class="catalog-menu">
+              <ul class="catalog-menu-group catalog-group-1">
+                <li><a href="vr.html">Виртуальная реальность</a></li>
+                <li><a href="catalog-group.html">Моноподы для селфи</a></li>
+                <li><a href="action.html">Экшн-камеры</a></li>
+              </ul>
+              <ul class="catalog-menu-group catalog-group-2">
+                <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
+                <li><a href="smartwatch.html">Умные часы</a></li>
+              </ul>
+              <ul class="catalog-menu-group catalog-group-3">
+                <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
+              </ul>
+            </div>
             <ul class="navi-shortcuts">
               <li class="navi-shortcuts-item delivery"><a href="#" class="header-delivery-link delivery-link">Доставка</a></li>
               <li class="navi-shortcuts-item warranty"><a href="#" class="header-warranty-link warranty-link">Гарантия</a></li>
               <li class="navi-shortcuts-item contacts"><a href="#" class="header-contacts-link contacts-link">Контакты</a></li>
             </ul>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </header>
         <main>
           <div class="wraper wraper-main">
             <h1>Моноподы для селфи</h1>
@@ -98,26 +108,21 @@
                 <span>Сортировка:</span>
                 <ul class="sorting-types">
                   <li class="sorting-types-item">
-                    <input type="radio" class="sorting-type-btn" id="price-btn" name="sorting-type-btn" checked>
-                    <label for="price-btn">По цене</label>
+                    <a class="sorting-type-btn">По цене</a>
                   </li>
                   <li>
-                    <input type="radio" class="sorting-type-btn" id="type-btn" name="sorting-type-btn">
-                    <label for="type-btn">По типу</label>
+                    <a class="sorting-type-btn">По типу</a>
                   </li>
                   <li>
-                    <input type="radio" class="sorting-type-btn" id="popular-btn" name="sorting-type-btn">
-                    <label for="popular-btn">По популярности</label>
+                    <a class="sorting-type-btn">По популярности</a>
                   </li>
                 </ul>
-                <ul class="sorting-values">
+                <ul class="sorting-order">
                   <li>
-                    <input type="radio" class="sorting-values-btn" id="ascending" name="sorting-values-btn">
-                    <label for="ascending">По возрастанию</label>
+                    <a class="sorting-order-btn">По возрастанию</a>
                   </li>
                   <li>
-                    <input type="radio" class="sorting-values-btn" id="descending" name="sorting-values-btn">
-                    <label for="descending">По убыванию</label>
+                    <a class="sorting-order-btn">По убыванию</a>
                   </li>
                 </ul>
               </nav>
@@ -185,17 +190,17 @@
           <nav class="footer-navi">
             <span>DEVICE</span>
             <ul class="footer-navi-user">
-              <li><a href="#" class="footer-navi-user-link footer-login-link"></a>Войти</li>
-              <li><a href="#" class="footer-navi-user-link footer-compare-link"></a>Сравнить</li>
-              <li><a href="#" class="footer-navi-user-link footer-cart-link"></a>Корзина</li>
+              <li><a href="#" class="footer-navi-user-link footer-login-link">Войти</a></li>
+              <li><a href="#" class="footer-navi-user-link footer-compare-link">Сравнить</a></li>
+              <li><a href="#" class="footer-navi-user-link footer-cart-link">Корзина</a></li>
             </ul>
           </nav>
           <div class="footer-info">
             <p>г. Москва, ул. Строителей, 15</p>
             <ul class="footer-info-services">
-              <li><a class="footer-delivery-link footer-info-services-link">доставка</a> </li>
-              <li><a class="footer-warranty-link footer-info-services-link">гарантия</a> </li>
-              <li><a class="footer-credit-link footer-info-services-link">контакты</a> </li>
+              <li><a href="#" class="footer-delivery-link footer-info-services-link">доставка</a> </li>
+              <li><a href="#" class="footer-warranty-link footer-info-services-link">гарантия</a> </li>
+              <li><a href="#" class="footer-credit-link footer-info-services-link">контакты</a> </li>
             </ul>
             <p>Тел.: +7 (495) 495-95-95</p>
           </div>
