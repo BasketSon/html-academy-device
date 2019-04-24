@@ -12,7 +12,7 @@
         <div class="overlay-picture visually-hidden"></div>
 
         <header class="page-header">
-          <h1><a href="#">DEVICE</a></h1>
+          <h1><a>DEVICE</a></h1>
           <nav class="page-navi">
             <div class="search-user-wraper">
               <form class="search-form" action="" method="get">
@@ -56,19 +56,19 @@
         </header>
         <main>
           <section class="promo">
-            <h2 class="visually-hidden">Промо-товары</h2>
+            <h2 class="visually-hidden">Популярные товары</h2>
             <div class="promo-slider">
-              <input type="radio" id="promo-slide-btn-1" name="slide-btn" aria-label="выбрать первый слайд">
-              <input type="radio" id="promo-slide-btn-2" name="slide-btn" aria-label="выбрать второй слайд">
-              <input type="radio" id="promo-slide-btn-3" name="slide-btn" aria-label="выбрать третий слайд">
+              <input type="radio" id="promo-slide-btn-1" class="promo-slider-radio visually-hidden" name="slide-btn" aria-label="выбрать первый слайд" checked>
+              <input type="radio" id="promo-slide-btn-2" class="promo-slider-radio visually-hidden" name="slide-btn" aria-label="выбрать второй слайд">
+              <input type="radio" id="promo-slide-btn-3" class="promo-slider-radio visually-hidden" name="slide-btn" aria-label="выбрать третий слайд">
               <div class="promo-slider-controls">
-                <label for="promo-slide-btn-1"></label>
-                <label for="promo-slide-btn-2"></label>
-                <label for="promo-slide-btn-3"></label>
+                <label for="promo-slide-btn-1" class="promo-slider-label"></label>
+                <label for="promo-slide-btn-2" class="promo-slider-label"></label>
+                <label for="promo-slide-btn-3" class="promo-slider-label"></label>
               </div>
               <ul class="promo-slides-container">
                 <li class="promo-slide promo-slide-1">
-                  <a href="#" class="item-page-button button">
+                  <a href="#" class="item-page-link">
                     <img src="img/selfie-stick.png" alt="selfie-stick">
                   </a>
                   <section class="promo-slide-description">
@@ -79,14 +79,14 @@
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                     </p>
                     <a href="#" class="item-page-button button">Подробнее</a>
-                    <table class="promo-slide-description-specification">
+                    <table class="promo-slide-specification">
                       <tr class="parameter">
-                        <td>8,5м</td>
+                        <td>8,5 м</td>
                         <td>5 кг</td>
                         <td>Карбон</td>
                       </tr>
                       <tr class="parameter-names">
-                        <th>Дина палки</th>
+                        <th>Длина палки</th>
                         <th>Вес палки</th>
                         <th>Материал</th>
                       </tr>
@@ -95,7 +95,7 @@
                   </section>
                 </li>
                 <li class="promo-slide promo-slide-2">
-                  <a href="#" class="item-page-button button">
+                  <a href="#" class="item-page-link">
                     <img src="img/smart-watch.png" alt="smart-watch">
                   </a>
                   <section class="promo-slide-description">
@@ -105,7 +105,7 @@
                     <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                     не пропускать занятия и соблюдать диету.</p>
                     <a href="#" class="item-page-button button">Подробнее</a>
-                    <table class="promo-slide-description-specification">
+                    <table class="promo-slide-specification">
                       <tr class="parameter">
                         <td>48 часов</td>
                       </tr>
@@ -117,7 +117,7 @@
                   </section>
                 </li>
                 <li class="promo-slide promo-slide-3">
-                  <a href="#" class="item-page-button button">
+                  <a href="#" class="item-page-link">
                     <img src="img/quadrocopter.png" alt="quadrocopter">
                   </a>
                   <section class="promo-slide-description">
@@ -128,7 +128,7 @@
                     мощным лазером, замаскированным под стандартную камеру.
                     </p>
                     <a href="#" class="item-page-button button">Подробнее</a>
-                    <table class="promo-slide-description-specification">
+                    <table class="promo-slide-specification">
                       <tr class="parameter">
                         <td>800 м</td>
                         <td>50 м</td>
@@ -281,6 +281,6 @@
 
         </section>
     </div>
-    <script type="text/javascript" src="js/modals.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
