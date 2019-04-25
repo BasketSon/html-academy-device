@@ -4,19 +4,6 @@ function showOverlay() {
   overlay.classList.toggle('visually-hidden')
 }
 
-// var promoButtons = document.querySelectorAll('.promo-slider-radio');
-// var promoLabels = document.querySelectorAll('.promo-slider-label');
-// var addcheckHandler = function (radio, label) {
-//   radio.addEventListener('click', function () {
-//     label.classList.toggle('checked-label')
-//   })
-// }
-// for (var i = 0; i < promoButtons.length; i++) {
-//   addcheckHandler(promoButtons[i], promoLabels[i]);
-//   if (promoButtons[i].checked === false) {
-//     promoLabels[i].classList.remove('checked-label')
-//   }
-// }
 
 var dotsBox = document.querySelector('.promo-slider-controls')
 
@@ -38,4 +25,46 @@ category.addEventListener ('blur', function() {
 
 for (var i = 0; i < catalogItems.length; i++) {
   addFocusHandler(catalogItems[i]);
+}
+
+var buttons = document.querySelectorAll('.promo-slider-radio');
+var currentButtonIndex = 0;
+
+
+var nextButton = function() {
+  buttons[currentButtonIndex].checked = false;
+  currentButtonIndex = (currentButtonIndex+1)%buttons.length;
+  buttons[currentButtonIndex].checked = true;
+}
+
+var slideInterval = setInterval(nextButton, 5000);
+window.onload = slideInterval;
+
+
+var stopSlider = function (radio) {
+  radio.addEventListener('click', function () {
+    clearInterval(slideInterval);
+  })
+}
+for (var i = 0; i < buttons.length; i++) {
+  stopSlider(buttons[i])
+}
+
+
+var serviceSlideButtons = document.querySelectorAll('.services-slider-controls input[type="radio"]')
+var serviceSlides = document.querySelectorAll('.services-slide');
+
+var addCheckHandler = function (serviceRadio, serviceSlide) {
+  serviceRadio.addEventListener ('click', function() {
+    if (serviceRadio.checked) {
+    for (var i = 0; i < serviceSlides.length; i++) {
+      serviceSlides[i].classList.remove('services-slide-visible');
+    }
+    serviceSlide.classList.add('services-slide-visible');
+    }
+  })
+}
+
+for (var i = 0; i < serviceSlideButtons.length; i++) {
+  addCheckHandler(serviceSlideButtons[i], serviceSlides[i])
 }
