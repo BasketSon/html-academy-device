@@ -1,9 +1,3 @@
-var overlay = document.querySelector('.overlay-picture');
-
-function showOverlay() {
-  overlay.classList.toggle('visually-hidden')
-}
-
 
 var dotsBox = document.querySelector('.promo-slider-controls')
 
@@ -11,6 +5,13 @@ dotsBox.addEventListener('mouseout', function () {
   dotsBox.style.outline = 0;
 })
 
+
+var logout = document.querySelector('.logout');
+var login = document.querySelector('.header-login-link');
+
+if (login.innerText !== 'Войти') {
+  logout.classList.add('show-logout')
+}
 
 //Отображение visibility родителя при фокусе дочерних ссылок без добавления класса.
 var catalogMenu = document.querySelector('.catalog-menu')
