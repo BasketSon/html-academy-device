@@ -10,15 +10,6 @@ if (login.innerText !== 'Войти') {
 
 
 
-
-
-var overlay = document.querySelector('.overlay-picture');
-
-function showOverlay() {
-  overlay.classList.toggle('visually-hidden')
-}
-
-
 var catalogMenu = document.querySelector('.catalog-menu')
 var catalogItems = catalogMenu.querySelectorAll('a')
 
